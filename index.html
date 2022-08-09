@@ -40,6 +40,52 @@
 			mso-table-rspace: 0pt;
 		}
 
+        .center {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .mini-title {
+            margin: 0;
+            margin-bottom: 20px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #262626;
+        }
+
+        .mini-descr {
+            margin: 0;
+            margin-bottom: 20px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #262626;
+        }
+
+        .mini-link {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            color: #1B54DD;
+            text-decoration: none;
+        }
+
+        .pb-32 {
+            padding-bottom: 32px;
+            border-spacing: 0;
+        }
+
+        .p-full-32 {
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-bottom: 32px;
+            padding-right: 0;
+        }
+
         @media (max-width: 620px) {
             .table-600 {
                 width: 280px !important;
@@ -47,6 +93,16 @@
 
             .table-480 {
                 width: 240px !important;
+            }
+
+            .table-250,
+            .table-240 {
+                width: 240px !important;
+            }
+
+            .mobile-top,
+            .mobile-bottom {
+                display: block !important;
             }
 
             .hero-img {
@@ -58,7 +114,7 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
+	<div style="font-size:0px; color:#ffffff; opacity:0; visibility:hidden; width:0; height:0; display:none;">
         Тестовое письмо
     </div>
 	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
@@ -66,10 +122,10 @@
             <td>
                 <table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#1B54DD">
                     <tr>
-                        <td align="center">
+                        <td align="center" class="center">
                             <table class="table-480" width="480" cellpadding="0" cellspacing="0">
                                 <tr>
-                                    <td align="center" style="padding-top: 32px; padding-bottom: 32px;">
+                                    <td align="center" style="padding-bottom: 32px;">
                                         <img src="/img/logo.png" width="100" alt="Логотип">
                                     </td>
                                 </tr>
@@ -94,14 +150,13 @@
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #ffffff; margin-top: 0; margin-bottom: 0; font-size: 14px; line-height: 17px;">
-                                            In the wild, there is no healthcare. In the wild healthcare is, ‘Ow, I hurt my leg. I can’t run. A lion eats me, and I’m dead.’ Well, I’m not dead. I’m the lion. You’re dead.
-                                        </p>
+                                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #ffffff; margin-top: 0; margin-bottom: 32px; font-size: 14px; line-height: 17px;">
+                                            In&nbsp;the wild, there is&nbsp;no&nbsp;healthcare. In&nbsp;the wild healthcare&nbsp;is, &lsquo;Ow, I&nbsp;hurt my&nbsp;leg. I&nbsp;can&rsquo;t run. A&nbsp;lion eats&nbsp;me, and I&rsquo;m dead.&rsquo; Well, I&rsquo;m not dead. I&rsquo;m the lion. You&rsquo;re dead.                                        </p>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align="center">
-                                        <a href="#" style="display: block; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 110px; margin-top: 32px; margin-bottom: 32px; padding-top: 14px; padding-bottom: 14px; font-size: 14px; line-height: 14px; border-radius: 2px; background-color: #fff; text-decoration: none;">
+                                        <a href="" style="display: block; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 110px; padding-top: 14px; padding-bottom: 14px; font-size: 14px; line-height: 14px; border-radius: 2px; background-color: #fff; text-decoration: none;">
                                             CTA Text
                                         </a>
                                     </td>
@@ -116,8 +171,74 @@
             <td>
                 <table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#fff">
                     <tr>
-                        <td>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis voluptate deleniti enim cupiditate voluptas beatae saepe explicabo numquam. Nesciunt dolorem similique iste. Ut quasi fugit eaque dolor fugiat, cum aspernatur?
+                        <td class="center" align="center">
+                            <table class="table-480" width="480" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="pb-32">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="table-240 mobile-top" width="240" >
+                                                    <img src="/img/1.jpg" class="hero-img" width="240" height="240" alt="Изображение">
+                                                </td>
+                                                <td class="p-full-32 mobile-bottom">
+                                                    <h3 class="mini-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        I live by one rule.
+                                                    </h3>
+                                                    <p class="mini-descr" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        No office romances, no way. Very messy, inappropriate… no. But, I live by another rule: Just do it… Nike.
+                                                    </p>
+                                                    <a href="" class="mini-link" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        Link out here &gt;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-32">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="table-240 mobile-top" width="240" >
+                                                    <img src="/img/2.jpg" class="hero-img" width="240" height="240" alt="Изображение">
+                                                </td>
+                                                <td class="p-full-32 mobile-bottom">
+                                                    <h3 class="mini-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        I work hard all day.                                                    
+                                                    </h3>
+                                                    <p class="mini-descr" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        I&nbsp;like knowing that there&rsquo;s going to&nbsp;be&nbsp;a&nbsp;break. Most days&nbsp;I just sit and wait for the break.                                                    </p>
+                                                    <a href="" class="mini-link" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        Link out here &gt;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pb-32">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="table-240 mobile-top" width="240" >
+                                                    <img src="/img/3.jpg" class="hero-img" width="240" height="240" alt="Изображение">
+                                                </td>
+                                                <td class="p-full-32 mobile-bottom">
+                                                    <h3 class="mini-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        I am fast.                                                    
+                                                    </h3>
+                                                    <p class="mini-descr" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        To&nbsp;give you a&nbsp;reference point. I&rsquo;m somewhere between a&nbsp;snake and a&nbsp;mongoose. And a&nbsp;panther.
+                                                    </p>
+                                                    <a href="" class="mini-link" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                                                        Link out here &gt;
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -127,7 +248,7 @@
             <td>
                 <table class="table-600" align="center" cellpadding="0" cellspacing="0" width="600" bgcolor="#E8E8E8">
                     <tr>
-                        <td>
+                        <td class="center">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis voluptate deleniti enim cupiditate voluptas beatae saepe explicabo numquam. Nesciunt dolorem similique iste. Ut quasi fugit eaque dolor fugiat, cum aspernatur?
                         </td>
                     </tr>
